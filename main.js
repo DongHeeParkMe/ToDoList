@@ -10,7 +10,7 @@ let inputText = document.getElementById('inputText');
 inputText.focus();
 
 inputText.onkeyup = function (event) {
-    if(event.which ===13){
+    if(event.key ==="Enter"){
         let itemText = inputText.value;
         addNewItem(document.getElementById('todolist'),itemText);
         inputText.focus();
